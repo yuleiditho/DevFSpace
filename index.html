@@ -18,16 +18,37 @@
                 <li><a href="/">Download</a></li> 
             </ul>
         </nav>
-        
-        <div class="content">
-            <h1 id="uline">DevSpace</h1>
-            <hr>
-            <button>Contact us</button>
-        </div>
     </header>
 
     <main>
-        <article>
+        <section class="content">
+            <h1>DevSpace</h1>
+            <br>
+            <a href="https://github.com/yuleiditho/DevFSpace" target="_blank">
+                <button>Contact us</button>
+            </a>
+        </section>
+
+        <section>
+            <h2>Image Maps</h2>
+            <p>Click on the computer, the phone, or the cup of coffee to go to a new page and read more about the topic:</p>
+            
+            <div class="image-map-container">
+                <img src="images/workplace.jpg" alt="Workplace" usemap="#workmap" style="width:400;height:379;">
+
+                <div class="highlight" style="top: 44px; left: 34px; width: 236px; height: 306px;"></div>
+                <div class="highlight" style="top: 172px; left: 290px; width: 43px; height: 78px;"></div>
+                <div class="highlight" style="top: 256px; left: 293px; width: 88px; height: 88px; border-radius: 50%;"></div>
+                
+                <map name="workmap">
+                    <area shape="rect" target="_blank" alt="computer" title="computer" href="https://www.w3schools.com/html/computer.htm" coords="273,349,32,42" shape="rect">
+                    <area shape="rect" target="_blank" alt="phone" title="phone" href="https://www.w3schools.com/html/phone.htm" coords="334,250,290,171" shape="rect">
+                    <area shape="circle" target="_blank" alt="coffee" title="coffee" href="https://www.w3schools.com/html/coffee.htm" coords="305,270,107" shape="circle">
+                </map>
+            </div>
+
+        </section>
+        <section>
             <h1>Design UI</h1>
 
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
@@ -35,7 +56,7 @@
 
             <a href="#">Start a Projecto Today</a>
             
-        </article>
+        </section>
         
 
         <section>
