@@ -1,3 +1,7 @@
+:root{ /*Variables constantes*/
+    --theme-color: #226DAA;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -10,7 +14,7 @@ body{
     align-items: center;
     height: 100vh;
 }
-.container{
+.container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -18,21 +22,33 @@ body{
     max-width: 1200px;
 }
 
-.menu{
-    background-color: #7185fa;
+.menu {
+    background-color: #7654b6;
     width: 100%;
     position: fixed;
     top: 0;
     left: 0;
     z-index: 1000;
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; /* Espaciar los elementos */
+    padding: 0 300px; /* Ajusta el padding según sea necesario */
 }
 
-.menu ul{
+.logo {
+    width: 250px;
+    height: auto;
+    vertical-align: middle;
+    margin-left: 0; /* Elimina el padding y usa margin si es necesario */
+}
+
+.menu ul {
     display: flex;
     list-style-type: none;
     justify-content: center;
 }
-.menu a{
+
+.menu a {
     display: block;
     color: white;
     text-align: center;
@@ -45,34 +61,103 @@ body{
 }
 
 .menu a:hover {
-    background-color: #484ad8;
+    background-color: #a3a4f5;
     color: black;
     padding: 12px;
 }
 
+/* Media Queries para Responsividad */
+@media (max-width: 1200px) {
+    .menu {
+        padding: 0 150px; /* Ajusta el padding para pantallas más pequeñas */
+    }
+}
+
+@media (max-width: 768px) {
+    .menu {
+        flex-direction: column; /* Cambia la dirección a columna para pantallas pequeñas */
+        padding: 0 20px; /* Ajusta el padding para pantallas más pequeñas */
+    }
+
+    .menu ul {
+        flex-direction: column; /* Cambia la dirección de los elementos del menú a columna */
+        align-items: center; /* Centra los elementos del menú */
+    }
+
+    .menu a {
+        padding: 10px 0; /* Ajusta el padding de los enlaces del menú */
+    }
+}
+
+
+.flex { 
+    display: flex;
+    gap: 0px;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+ }
+  
+ .flex__item:nth-child(1) { 
+    width: 40%;
+    height: 80%;
+    
+ }
+  
+ .flex__item:nth-child(2){ 
+    width: 40%;
+    height: 80%;
+    
+ }
+
+ .flex img{
+    margin-top: 80px;
+    padding-right: 400px;
+    max-width: 100%;
+    height: auto;
+ }
 .content{
-    margin-top: 60px;
-    text-align: center;
-    width: 100%;
+    background: rgb(174,176,238);
+    background: linear-gradient(25deg, rgba(174,176,238,1) 0%, rgba(148,208,233,1) 100%);
+    padding: 20px; /* Espaciado interno */
+    padding-bottom: 60px;
 }
 
 h1{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400px;
     margin-top: 10px;
     padding-top: 10px;
     text-align: center;
+
 }
 
-.content h1{
-    text-align: center;
-    border: 2px solid powderblue;
+.content h1,span{
+    font-family: 'Poppins', sans-serif;
+    font-size: xxx-large;
+    font-weight: bold;
+    color: #4b1ea0;
+    text-align: left;
+    padding: 0px;
+    margin-top: 50px;
+    margin-left: 300px;
+}
+
+.content p{
+    font-family: 'Poppins', sans-serif;
+    text-align: left;
+    display: block;
     padding: 30px;
+    margin-left: 280px;
 }
 
 .content button {
-    background-color: hsl(300, 76%, 72%);
+    background-color: hsl(251, 76%, 67%);
     color: white;
-    padding: 10px 20px;
+    padding: 10px 30px;
     border: none;
+    margin-left: 350px;
     cursor: pointer;
     transition: transform 0.3s;
 }
