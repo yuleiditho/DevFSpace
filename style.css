@@ -113,7 +113,11 @@ body{
 
  .flex img{
     margin-top: 80px;
+<<<<<<< HEAD
     padding-right: 400px;
+=======
+    padding-right: 300px;
+>>>>>>> 2500b80285487ec266e93ca05782c16d98bdfb7d
     max-width: 100%;
     height: auto;
  }
