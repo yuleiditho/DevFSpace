@@ -1,6 +1,5 @@
 # DevSpace
-Site in progress
-
+Site complete, activities CSS 
 # Módulo 2: CSS
 Este repositorio contiene ejercicios y ejemplos prácticos para aprender y mejorar tus habilidades en CSS. 
 ## Descripción
