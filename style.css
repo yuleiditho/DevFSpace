@@ -511,8 +511,53 @@
     background-color: #333;
   }
 
+   /* Estilo para el botón flotante */
+   .chat-button {
+    position: fixed; 
+    bottom: 25px; 
+    right: 2rem; 
+    background-color: rgb(162, 17, 190); 
+    border-radius: 10px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000; 
+    display: flex; 
+    align-items: center; 
+    padding: 1.65rem 1.65rem;
+    font-size: 1.68rem; 
+    color: white;
+    font-weight: bold; 
+    transition: background-color 0.3s, transform 0.2s ease-in-out; 
+  }
+
+  /* Estilo del enlace */
+  .chat-link {
+    text-decoration: none; 
+    display: flex; 
+    align-items: center; 
+    color: white; 
+  }
+
+  /* Estilo del logo dentro del botón */
+  .chat-logo {
+    width: 25px; 
+    height: auto;
+    margin-right: 0.7rem; 
+  }
+
+  /* Estilo para el texto "Chat" */
+  .chat-button span {
+    font-size: 1.2rem; 
+  }
+
+  /* Efecto al pasar el ratón */
+  .chat-button:hover {
+    background-color: rgb(135, 72, 148);
+    transform: scale(1.1); 
+  }
+
+
   /* media queries */
-  @media (max-width:991px){
+  @media (min-width:991px) and (max-width: 1400px){
     html{
       font-size: 55%;
     }
